@@ -27,26 +27,23 @@ Web front, backend Full stack Nomad 선생님
 
 - Overfetching
 
-내가 보여주고 싶은 정보 외에도 불필요한 정보들을 서버에서 받아와 사용하게 되는 것. 
->> 비효율적임.
-frontend가 database에 필요한 정보만 요청하게 해서 해결가능
+내가 보여주고 싶은 정보 외에도 불필요한 정보들을 서버에서 받아와 사용하게 되는 것입니다.
+>> 비효율적
+frontend가 database에 필요한 정보만 요청하게 해서 해결가능합니다.
 
 - Under-fetching
 
-인스타그램 앱을 시작할 때 feed, notification, userprofile에 대한 정보를 받아야 됨.
->> 하나의 기능을 위해 여러 요청을 더 받아와야 하는 것.
+인스타그램 앱을 시작할 때 feed, notification, userprofile에 대한 정보를 받아야 됩니다.
+>> 하나의 기능을 위해 여러 요청을 더 받아와야 하는 것입니다.
 >> graphql에서 원하는 정보만 받음으로써 해결 가능
-
-query를 사용. 원하는 정보를 요청해서 database에 요구할 수 있음.
-object형태로 정보 통신을 함.
 
 #### graphql-yoga를 설치하고 환경 setting하기
 
-graphql-yoga 를 설치할 것임. 
-create-react-app이랑 비슷한데, graphql 프로젝트를 진행하는데 도움이 되는 것임.
+graphql-yoga 를 설치
+(create-react-app이랑 비슷한데, graphql 프로젝트를 진행하는데 도움이 됩니다.)
 
-backend개발에 편함. 
-movie API를 만들것임. NodeJS, JavaScript, Backend에 익숙해지면 좋음.
+backend개발에 도움
+movie API를 만들것입니다. NodeJS, JavaScript, Backend에 사용 됩니다.
 
 mkdir movieql
 cd movieql
@@ -62,33 +59,23 @@ git hub에서 repository 추가, url 입력
 
 ![image](https://user-images.githubusercontent.com/44837403/114276682-b3444380-9a62-11eb-978c-49c7deb92310.png)
 
+graphql에서 내가 원하는 형식의 query로 정보를 받는 것을 확인하는 기능
 
-query: 내가 원하는 형식대로 정보를 받고자 할 때 사용
-Resolver: query를 해결하기 위해 있는 기능
-graphql에서 내가 원하는 형식의 query로 정보를 받는 것을 확인할 수 있음.
-이 query를 보낼때 타입의 형식 역시 Schema로 지정할 수 있음. 맞는 타입이 아니면 error가 남.
-graphql에서 resolver는 일종의 원하는 데이터 형식을 지정하는 역할을 한다. 이때, resolver 데이터의 타입들을 schema로 지정할 수 있다. db.js는 일종의 데이터베이스의 역할을 하는데, 여러 사람들에 대한 정보를 담고 있다.
-이 정보들을 resolver에서 불러와 people의형태, person의 형태로 제공한다.
-db.js에 사람들에 대한 정보들을 저장한다. 이 때 사람들을 구별해주기 위해 id를 부여한다.  이 db는 resolver.js에서 import해서 people의 형태로 사용된다. 이때 이 people의 type은 schema에서 정의 되는데, people: [Person]! 으로 리스트 형태로 받게 한다. Person의 타입에서는 id가 추가되어야 한다.
- 
+데이터 query 타입 schema 지정 기능 
+
+Reslover를 통해서 정해준 데이터 형식에 맞추어서 통신에 사용하는 기능
+
 #### Mutation을 정의하고 사용하기
 
 ![image](https://user-images.githubusercontent.com/44837403/114276664-9f98dd00-9a62-11eb-987b-2ee5d2dd738b.png)
 
-Mutation: 데이터베이스의 상태를 변하게 하거나 할 때 사용하는 것임.
-Movie정보들을 db에 저장하고 getMovies, addMovies, getByid에 대한 query들을 resolver에 정의해둔다. 
-이렇게 하면 저장된 영화의 정보들 중에서 내가 원하는 형태의 정보를 얻어낼 수 있다. 또한 원하는 영화의 정보 역시 id를 통해 확인할
-수 있다. addMovie를 통해서 추가하고 싶은 영화 정보를 db에 추가해줄 수도 있다. (array명령어 push 사용)
+저장된 영화 정보를 Mutation을 통해서 update하는 기능
 
-component에 있는 prop들을 보내줄때 제대로 보냈는지 확인할 것이다.
-PropTypes 에 컴포넌트가 가지는 Props들을 check할 수 있다. 원하는 속성들을 잘 보내주었는지 확인시켜주는 기능이다.
+추가하고 싶은 영화 정보 Mutation으로 추가하는 기능
 
 #### Delete Mutation 구성하기
 
-return true, false를 해줌으로써 Mutation의 response도 확인할 수 있음.
-어떤 backend라도 graphql을 적용할 수 있음.
-다른 api들과 이야기할 수 있음. 사용자는 playground 콘솔에서 상호작용함.
-서버에서 내가 지우고 싶은 영화를 지울 수 있도록 설정했음. resolve.js의 mutation에 deleteMovie 기능을 작성하고 그에 맞게 schema 설정 및 db에서 boolean값을 리턴하는 함수를 만들고 export 해주었음. 이는 import해서 사용됨. 이렇게 response를 얻게 하면 나중에 자동화 기능을 추가해줄 수 있음. 
+저장된 영화 정보에서 Mutation을 활용해 Delete하는 기능
 
 ***
 
