@@ -1,4 +1,4 @@
-# GraphQL
+## GraphQL
 
 웹에 관해서, 그 중에서도 GraphQL에 대해서 공부하고 강의들을 수강한뒤, 최종 실습 파트 부분에서 만든 코드입니다.
 
@@ -6,24 +6,20 @@ https://kimsmartblog.tistory.com/
 
 블로그 Web 파트 - GraphQL에 기능별로 정리되어있습니다.
 
-***
 
 ## 강의 제목 및 출처
 https://nomadcoders.co/graphql-for-beginners
 
 Web front, backend Full stack Nomad 선생님
 
-***
 
 ## 목차
 ![image](https://user-images.githubusercontent.com/44837403/114276188-8727c300-9a60-11eb-923a-91b41b87a284.png)
 
-***
 
 ## 진행 기간
 2020-08-03 ~ 2020-08-05
 
-***
 
 ## 프로그램 기능
 
@@ -95,7 +91,6 @@ return true, false를 해줌으로써 Mutation의 response도 확인할 수 있�
 서버에서 내가 지우고 싶은 영화를 지울 수 있도록 설정했음. resolve.js의 mutation에 deleteMovie 기능을 작성하고 그에 맞게 schema 설정 및 db에서 boolean값을 리턴하는 함수를 만들고 export 해주었음. 이는 import해서 사용됨. 이렇게 response를 얻게 하면 나중에 자동화 기능을 추가해줄 수 있음. 
 
 ***
-
 
 ## 느낀점
 
