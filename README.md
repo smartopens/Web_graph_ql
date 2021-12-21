@@ -1,7 +1,6 @@
 ## GraphQL
 
-Web Backend GraphQL에 대해서 공부하고 정리한 실습코드
-
+Web Backend GraphQL에 대해서 공부하고 실습코드들을 정리했습니다.
 
 ## 강의 제목 및 출처
 https://nomadcoders.co/graphql-for-beginners
