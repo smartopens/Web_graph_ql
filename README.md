@@ -1,6 +1,6 @@
 ## GraphQL
 
-Web Backend GraphQL에 대해서 공부하고 정리한 
+Web Backend GraphQL에 대해서 공부하고 정리한 실습코드
 
 
 ## 강의 제목 및 출처
