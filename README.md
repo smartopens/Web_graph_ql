@@ -8,10 +8,6 @@ https://nomadcoders.co/graphql-for-beginners
 Web front, backend Full stack Nomad 선생님
 
 
-## 목차
-![image](https://user-images.githubusercontent.com/44837403/114276188-8727c300-9a60-11eb-923a-91b41b87a284.png)
-
-
 ## 진행 기간
 2020-08-03 ~ 2020-08-05
 
