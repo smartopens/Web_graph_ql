@@ -5,7 +5,7 @@ Web Backend GraphQL에 대해서 공부하고 실습코드들을 정리했습니
 ## 강의 제목 및 출처
 https://nomadcoders.co/graphql-for-beginners
 
-Web front, backend Full stack Nomad 선생님
+Web front, backend Full stack Nomad 
 
 
 ## 진행 기간
@@ -28,50 +28,28 @@ frontend가 database에 필요한 정보만 요청하게 해서 해결가능합�
 >> 하나의 기능을 위해 여러 요청을 더 받아와야 하는 것입니다.
 >> graphql에서 원하는 정보만 받음으로써 해결 가능
 
-#### graphql-yoga를 설치하고 환경 setting하기
+### Specification
 
-graphql-yoga 를 설치
-(create-react-app이랑 비슷한데, graphql 프로젝트를 진행하는데 도움이 됩니다.)
+- graphql-yoga 
 
-backend개발에 도움
-movie API를 만들것입니다. NodeJS, JavaScript, Backend에 사용 됩니다.
+- Query, Resolver를 정의하고 Query에 맞춘 Schema 구성
 
-mkdir movieql
-cd movieql
-yarn init
-name (movieql): enter
-version (1.0.0): enter
-description: Movie API with Graphql
-enter
-https://github.com/kimhyeonmyeong/movieql
-git hub에서 repository 추가, url 입력
+![image](https://user-images.githubusercontent.com/44837403/147017356-a5969211-1646-48e7-9dd3-5a2caae1a234.png)
 
-#### Query, Resolver를 정의하고 Query에 따라 Schema 구성하기
+- graphql에서 내가 원하는 형식의 query로 정보를 받는 것을 확인하는 기능
 
-![image](https://user-images.githubusercontent.com/44837403/114276682-b3444380-9a62-11eb-978c-49c7deb92310.png)
+- Reslover를 통해서 정해준 데이터 형식에 맞추어서 통신에 사용
 
-graphql에서 내가 원하는 형식의 query로 정보를 받는 것을 확인하는 기능
-
-데이터 query 타입 schema 지정 기능 
-
-Reslover를 통해서 정해준 데이터 형식에 맞추어서 통신에 사용하는 기능
-
-#### Mutation을 정의하고 사용하기
+- Mutation을 정의하고 사용
 
 ![image](https://user-images.githubusercontent.com/44837403/114276664-9f98dd00-9a62-11eb-987b-2ee5d2dd738b.png)
 
-저장된 영화 정보를 Mutation을 통해서 update하는 기능
+- 저장된 영화 정보를 Mutation을 통해서 update하는 기능
 
-추가하고 싶은 영화 정보 Mutation으로 추가하는 기능
+- 추가하고 싶은 영화 정보 Mutation으로 추가하는 기능
 
-#### Delete Mutation 구성하기
+- Delete Mutation 구성
 
-저장된 영화 정보에서 Mutation을 활용해 Delete하는 기능
-
-## 느낀점
-
-서버에서 데이터를 어떤식으로 받아오는지에 대해서 좀 더 자세히 알 수 있었습니다. 아마 다양한 framework나 tool들이 있을 것 같고 이와 관련한   
-기능들을 만들때에 도움이 될것 같습니다.
 
 
 
