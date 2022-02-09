@@ -2,17 +2,20 @@
 
 Web Backend GraphQL에 대해서 공부하고 실습코드들을 정리했습니다.
 
-## 강의 제목 및 출처
+### 강의 제목 및 출처
 https://nomadcoders.co/graphql-for-beginners
 
 Web front, backend Full stack Nomad 
 
+### 목차
+
+![image](https://user-images.githubusercontent.com/44837403/153229768-8cd34888-8a93-43fa-bcb3-18eeeb7ddfbf.png)
 
 ## 진행 기간
 2020-08-03 ~ 2020-08-05
 
 
-## 프로그램 기능
+### 프로그램 기능
 
 #### GraphQL을 통해 해결할 수 있는 문제
 
