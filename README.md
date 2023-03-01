@@ -2,11 +2,6 @@
 
 Web Backend GraphQL
 
-### Reference
-https://nomadcoders.co/graphql-for-beginners
-
-Web front, backend Full stack Nomad 
-
 ### 진행 기간
 2020-08-03 ~ 2020-08-05
 
@@ -38,6 +33,10 @@ Web front, backend Full stack Nomad
 
 ![image](https://user-images.githubusercontent.com/44837403/181673958-a86d9290-f5dd-4107-989e-3c4f51a1c4f9.png)
 
+### Reference
+https://nomadcoders.co/graphql-for-beginners
+
+Web front, backend Full stack Nomad 
 
 
 
