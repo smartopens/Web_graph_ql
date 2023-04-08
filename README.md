@@ -34,7 +34,10 @@ Mutations
 
 ### View
 
-![image](https://user-images.githubusercontent.com/44837403/181673958-a86d9290-f5dd-4107-989e-3c4f51a1c4f9.png)
+<img width="557" alt="01edcffd-e9f0-4a65-9aef-66a16e934984" src="https://user-images.githubusercontent.com/44837403/230718222-a7ade866-fdc0-4878-8ad2-97ca3e986bb3.png">
+
+![image](https://user-images.githubusercontent.com/44837403/230718335-c777a2a3-e0a0-46fa-a4ce-7e9298f1f752.png)
+
 
 ### Reference
 https://nomadcoders.co/graphql-for-beginners
