@@ -7,7 +7,10 @@ Web Backend GraphQL
 
 ### 구성
 
-![image](https://user-images.githubusercontent.com/44837403/181673647-caf80ff7-7df7-44eb-9d44-313b8fc17800.png)
+Types   
+Schema    
+Queries   
+Mutations   
 
 ### Specification
 
