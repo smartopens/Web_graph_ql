@@ -2,9 +2,6 @@
 
 Web Backend GraphQL
 
-### 진행 기간
-2020-08-03 ~ 2020-08-05
-
 ### 구성
 
 Types   
